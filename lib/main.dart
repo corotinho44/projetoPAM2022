@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Generated App',
+      title: 'Ordenação de Números',
       theme: new ThemeData(
         brightness: Brightness.dark,
         primarySwatch: Colors.blue,
