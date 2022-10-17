@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
             new TextField(
               controller: pNumero,
               style: new TextStyle(
-                  fontSize: 12.0,
+                  fontSize: 22.0,
                   color: const Color(0xFFffffff),
                   fontWeight: FontWeight.w200,
                   fontFamily: "Roboto"),
