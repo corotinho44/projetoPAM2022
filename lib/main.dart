@@ -53,6 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   fontWeight: FontWeight.w700,
                   fontFamily: "Merriweather"),
             ),
+            
             new TextField(
               controller: pNumero,
               style: new TextStyle(
@@ -72,7 +73,15 @@ class _MyHomePageState extends State<MyHomePage> {
             new TextField(
               controller: sNumero,
               style: new TextStyle(
-                  fontSize: 12.0,
+                  fontSize: 14.0,
+                  color: const Color(0xFFffffff),
+                  fontWeight: FontWeight.w200,
+                  fontFamily: "Bot"),
+            ),
+            new TextField(
+              controller: sNumero,
+              style: new TextStyle(
+                  fontSize: 18.0,
                   color: const Color(0xFFffffff),
                   fontWeight: FontWeight.w200,
                   fontFamily: "Roboto"),
@@ -80,15 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
             new TextField(
               controller: sNumero,
               style: new TextStyle(
-                  fontSize: 12.0,
-                  color: const Color(0xFFffffff),
-                  fontWeight: FontWeight.w200,
-                  fontFamily: "Roboto"),
-            ),
-            new TextField(
-              controller: sNumero,
-              style: new TextStyle(
-                  fontSize: 12.0,
+                  fontSize: 17.0,
                   color: const Color(0xFFffffff),
                   fontWeight: FontWeight.w200,
                   fontFamily: "Roboto"),
@@ -125,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   new Text(
                     ordenacao,
                     style: new TextStyle(
-                        fontSize: 23.0,
+                        fontSize: 20.0,
                         color: const Color(0xFFff0000),
                         fontWeight: FontWeight.w800,
                         fontFamily: "Merriweather"),
@@ -143,7 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: new Text(
                         "Ordenar",
                         style: new TextStyle(
-                            fontSize: 23.0,
+                            fontSize: 18.0,
                             color: const Color(0xFF000000),
                             fontWeight: FontWeight.w800,
                             fontFamily: "Merriweather"),
