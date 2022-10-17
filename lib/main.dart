@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Programa De Ordenação De Número',
+
       theme: new ThemeData(
         brightness: Brightness.dark,
         primarySwatch: Colors.blue,
@@ -31,6 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
   TextEditingController sNumero = TextEditingController();
   TextEditingController tNumero = TextEditingController();
   String ordenacao = "";
+
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
             new TextField(
               controller: pNumero,
               style: new TextStyle(
-                  fontSize: 12.0,
+                  fontSize: 22.0,
                   color: const Color(0xFFffffff),
                   fontWeight: FontWeight.w200,
                   fontFamily: "Roboto"),
@@ -67,6 +68,22 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: const Color(0xFFffffff),
                   fontWeight: FontWeight.w700,
                   fontFamily: "Merriweather"),
+            ),
+            new TextField(
+              controller: sNumero,
+              style: new TextStyle(
+                  fontSize: 12.0,
+                  color: const Color(0xFFffffff),
+                  fontWeight: FontWeight.w200,
+                  fontFamily: "Roboto"),
+            ),
+            new TextField(
+              controller: sNumero,
+              style: new TextStyle(
+                  fontSize: 12.0,
+                  color: const Color(0xFFffffff),
+                  fontWeight: FontWeight.w200,
+                  fontFamily: "Roboto"),
             ),
             new TextField(
               controller: sNumero,
@@ -115,6 +132,23 @@ class _MyHomePageState extends State<MyHomePage> {
                   )
                 ]),
             new Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.max,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  new RaisedButton(
+                      key: null,
+                      onPressed: ordenar,
+                      color: const Color(0xFFe0e0e0),
+                      child: new Text(
+                        "Ordenar",
+                        style: new TextStyle(
+                            fontSize: 23.0,
+                            color: const Color(0xFF000000),
+                            fontWeight: FontWeight.w800,
+                            fontFamily: "Merriweather"),
+                      )),
+                  new Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.center,
