@@ -76,6 +76,22 @@ class _MyHomePageState extends State<MyHomePage> {
                   fontWeight: FontWeight.w200,
                   fontFamily: "Roboto"),
             ),
+            new TextField(
+              controller: sNumero,
+              style: new TextStyle(
+                  fontSize: 12.0,
+                  color: const Color(0xFFffffff),
+                  fontWeight: FontWeight.w200,
+                  fontFamily: "Roboto"),
+            ),
+            new TextField(
+              controller: sNumero,
+              style: new TextStyle(
+                  fontSize: 12.0,
+                  color: const Color(0xFFffffff),
+                  fontWeight: FontWeight.w200,
+                  fontFamily: "Roboto"),
+            ),
             new Text(
               "Terceiro Número:",
               style: new TextStyle(
@@ -115,6 +131,23 @@ class _MyHomePageState extends State<MyHomePage> {
                   )
                 ]),
             new Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.max,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  new RaisedButton(
+                      key: null,
+                      onPressed: ordenar,
+                      color: const Color(0xFFe0e0e0),
+                      child: new Text(
+                        "Ordenar",
+                        style: new TextStyle(
+                            fontSize: 23.0,
+                            color: const Color(0xFF000000),
+                            fontWeight: FontWeight.w800,
+                            fontFamily: "Merriweather"),
+                      )),
+                  new Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.center,
